@@ -31,7 +31,7 @@ connectDB().catch(err => {
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
-    const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5002'];
+    const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5002', 'https://e-sangrahan.netlify.app'];
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
